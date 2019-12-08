@@ -19,41 +19,5 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  totals= {
-
-}
-row_index =0 
-while row_index < nds.length do 
-
-director=nds [row_index][:name]
-totals[director]= 0
-column_index=0
-while column_index < nds[row_index][:movies].length do 
-
-totals[director]+=nds[row_index][:movies][column_index][:worldwide_gross]
-column_index += 1 
-end 
-row_index += 1 
-end
-
-totals 
   nil
 end
-
-[
-  {:name=>"Stephen Spielberg",
-    :movies=>[
-    {:title=>"Jaws", :studio=>"Universal", :worldwide_gross=>260000000,:release_year=>1975},
-    {:title=>"Close Encounters of the Third Kind",:studio=>"Columbia", :worldwide_gross=>135189114,:release_year=>1977},
-    {:title=>"Raiders of the Lost Ark",:studio=>"Paramount",:worldwide_gross=>248159971,:release_year=>1981},
-    {:title=>"E.T. the Extra-terrestrial",:studio=>"Universal",:worldwide_gross=>435110554,:release_year=>1982},
-    {:title=>"Schindler's List",:studio=>"Universal",:worldwide_gross=>96898818,:release_year=>1993},
-    {:title=>"Lincoln", :studio=>"Buena Vista",:worldwide_gross=>182207973,:release_year=>2012}
-    ]
-  },
-  {:name=>"Russo Brothers",
-  :movies=>[
-    {:title=>"Avengers Endgame", :studio=>"Buena Vista", :worldwide_gross=>858371337, :release_year=>2019},
-    {:title=>"Avengers Infinity War", :studio=>"Buena Vista", :worldwide_gross=>678815482,:release_year=>2018},
-    {:title=>"Captain America Civil War",:studio=>"Buena Vista", :worldwide_gross=>408084349,:release_year=>2016},
-   
