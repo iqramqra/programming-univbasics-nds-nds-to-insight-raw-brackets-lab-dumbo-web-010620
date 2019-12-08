@@ -20,8 +20,8 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
     nil
-  result= { }
-    row_index =0 
+  result={ }
+    row_index=0 
     while row_index < nds.length do 
     director=nds [row_index][:name]
     result[director]= 0
